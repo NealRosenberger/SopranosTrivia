@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="assets/javascript.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+	<img src="assets/images/soplogo.jpg">
+	<h1>Trivia</h1>
+	<h3>You smart enough to be the Boss?</h3>
+	</header>
+
+	<div id="timer"></div>
+
+	<form id="quiz" name ="quiz">
+
+		<p>What is the name of Tony's Boat?</p>
+		<input type="radio" id="mc" name="question1" value = "Sinatra">Sinatra<br>
+		<input type="radio" id="mc" name="question1" value = "Bada Bing">Bada Bing<br>
+		<input type="radio" id="mc" name="question1" value = "Stugots">Stugots<br>
+		<input type="radio" id="mc" name="question1" value = "Carmela2">Carmella 2<br>
+
+		<p>What is the name of the pork store?</p>
+		<input type="radio" id="mc" name="question2" value = "The Pig"> The Pig<br>
+		<input type="radio" id="mc" name="question2" value = "Mangia">Mangia<br>
+		<input type="radio" id="mc" name="question2" value = "Jersey Sausage Co.">Jersey Sausage Co.<br>
+		<input type="radio" id="mc" name="question2" value = "Satriale's">Satriale's<br>
+
+		<p>Where do Paulie and Chris try to get rid of the Russian?</p>
+		<input type="radio" id="mc" name="question3" value = "Pine Barrens">Pine Barrens<br>
+		<input type="radio" id="mc" name="question3" value = "Atlantic City">Atlantic City<br>
+		<input type="radio" id="mc" name="question3" value = "Harlem">Harlem<br>
+		<input type="radio" id="mc" name="question3" value = "Port of Newark">Port of Newark<br>
+
+		<p>Woke up this morning got myself a .....?</p>
+		<input type="radio" id="mc" name="question4" value = "Coffee">Coffee<br>
+		<input type="radio" id="mc" name="question4" value = "Biali">Biali<br>
+		<input type="radio" id="mc" name="question4" value = "Cigar">Cigar<br>
+		<input type="radio" id="mc" name="question4" value = "Gun">Gun<br>
+
+		<p>What type of cigar does Tony smoke the most?</p>
+		<input type="radio" id="mc" name="question5" value = "Cuban Montecristos">Cuban Montecristos<br>
+		<input type="radio" id="mc" name="question5" value = "CAO Maduro L’Anniversaire Robusto">CAO Maduro L’Anniversaire Robusto<br>
+		<input type="radio" id="mc" name="question5" value = "Macanudo Inspirado Black">Macanudo Inspirado Black<br>
+		<input type="radio" id="mc" name="question5" value = "Hoyo De Monterrey">Hoyo De Monterrey<br>
+
+		<p>What type of shotgun does give his father in law Hugh for his 75th birthday?</p>
+		<input type="radio" id="mc" name="question6" value = "Beretta">Beretta<br>
+		<input type="radio" id="mc" name="question6" value = "Benelli">Benelli<br>
+		<input type="radio" id="mc" name="question6" value = "Franchi">Franchi<br>
+		<input type="radio" id="mc" name="question6" value = "Saiga">Saiga<br>
+
+		<p>Where is Uncle Pat's farm?</p>
+		<input type="radio" id="mc" name="question7" value = "Saratoga">Saratoga<br>
+		<input type="radio" id="mc" name="question7" value = "Syracuse">Syracuse<br>
+		<input type="radio" id="mc" name="question7" value = "Buffalo">Buffalo<br>
+		<input type="radio" id="mc" name="question7" value = "Kinderhook">Kinderhook<br>
+
+		<p>Who played Tony Blundetto?</p>
+		<input type="radio" id="mc" name="question8" value = "Steve Buschemi">Steve Buschemi<br>
+		<input type="radio" id="mc" name="question8" value = "Frank Albanese">Frank Albanese<br>
+		<input type="radio" id="mc" name="question8" value = "Joe Pantoliano">Joe Pantoliano<br>
+		<input type="radio" id="mc" name="question8" value = "CSteve Schirripa">Steve Schirripa<br>
+
+		<p>Who was the creator of the show?</p>
+		<input type="radio" id="mc" name="question9" value = "David Milch">David Milch<br>
+		<input type="radio" id="mc" name="question9" value = "David Chase">David Chase<br>
+		<input type="radio" id="mc" name="question9" value = "David Simon">David Simon<br>
+		<input type="radio" id="mc" name="question9" value = "David Benioff">David Benioff<br>
+
+		<p>What Quentin Tarantino film was James Gandolfini in?</p>
+		<input type="radio" id="mc" name="question10" value = "True Romance">True Romance<br>
+		<input type="radio" id="mc" name="question10" value = "Reservoir Dogs">Reservoir Dogs<br>
+		<input type="radio" id="mc" name="question10" value = "Pulp Fiction">Pulp Fiction<br>
+		<input type="radio" id="mc" name="question10" value = "Kill Bill">Kill Bill<br>
+		<br>
+		
+		<input type="button" id = "button"  value ="It's done Tony!" onclick = "check();">
+
+	</form>
+	
+	<div id="aftersubmit">
+
+	<p id = "message"></p>
+	<p id = "numbercorrect"></p>
+	<img id = "pictures">
+	</div>
+
+
+</body>
+</html>

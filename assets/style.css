@@ -1,0 +1,29 @@
+body{
+/*background-color: black;*/
+font-family: 'Chivo', sans-serif;
+
+
+}
+
+header{
+	background-color: black;
+	color: #EB1A2D;
+	text-align: center;
+	height: 375px;
+	
+
+}
+
+form{font color: #A9A9A9;
+
+}
+
+#aftersubmit {
+	visibility: hidden;
+}
+
+#quiz{
+	margin-left: 10px;
+	background-color: black;
+	color: grey;
+}
