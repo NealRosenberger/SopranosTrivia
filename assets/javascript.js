@@ -1,30 +1,26 @@
 
-$(document).ready(function() {
-	var index = 0;
-	var countdownTimer = {
-		time : 30,
-		reset: function() {
-			this.time = 30;
-			$('timer').html( + this.time + ' seconds remaining');
-		},
-		start: function() {
-			counter = setInterval(countdownTimer.count, 1000);	
-		},
-		stop: function() {
-			clearInterval(counter);
-		},
-		count: function() {
-				countdownTimer.time--;
-				console.log(countdownTimer.time);
+// $(document).ready(function() {
 
-			if (countdownTimer.time >= 0) {
-				$('timer').html(+ countdownTimer.time + ' seconds remaining');
-			}
-	// };
+
+
+var timer = 60;
+
+
+var interval = setInterval(function() {
+    timer--;
+
+  console.log(timer);
+    $('#timer').html(timer);
+    	},1000);
+
+    if (timer === 0) {clearInterval(interval);
+		}; 
+
+	// 1000};
+
 
 
 function check (){
-
 
 	var question1 = document.quiz.question1.value;
 	var question2 = document.quiz.question2.value;
